@@ -1,15 +1,16 @@
 <template>
-  <h1>Hola soy la Home</h1>
+  <VideoGrid />
 </template>
 
 <script>
+import VideoGrid from "../components/VideoGrid.vue";
+
 export default {
   name: "Home",
+  components: { VideoGrid },
 };
 </script>
 
 <style scoped>
-h1 {
-  padding-top: 10rem;
-}
+
 </style>

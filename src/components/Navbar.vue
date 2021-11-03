@@ -3,7 +3,7 @@
     <nav>
       <div class="logo">
         <router-link to="/"
-          ><img src="@/assets/img/logo_rodrigocostas.png" alt="Rodrigo Costas"
+          ><img src="../assets/img/logo_rodrigocostas.png" alt="Rodrigo Costas"
         /></router-link>
       </div>
       <div @click="toggleMenu()" :class="[isOpen ? 'active' : '', 'menu-icon']">
@@ -52,6 +52,7 @@ nav .logo a {
 
 nav .logo img {
   width: 12rem;
+  vertical-align: middle;
 }
 
 nav .logo em {

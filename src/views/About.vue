@@ -10,43 +10,45 @@
 
     <div class="services">
       <div class="container">
-        <div class="col-md-6 col-sm-12">
-          <div class="service-item">
-            <div class="portfolio-image mt-3">
-              <img src="../assets/img/Roy.png" alt="" />
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="service-item">
+              <div class="portfolio-image text-center">
+                <img src="../assets/img/Roy.png" alt="" />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="service-item">
-            <div class="text">
-              <div class="text-left">
-                <p>
-                  Actualmente soy Director General Creativo en Publicidad
-                  Comercial Mullen Lowe Guatemala, parte de GCC, el Grupo de
-                  comunicación más grande de Centroamérica y Caribe. Antes viví
-                  la experiencia de desarrollar mi propia agencia como socio
-                  fundador de MOSTRO Agency. Previamente ocupé cargos de
-                  Dirección en más de 5 agencias, entre los que se destacan la
-                  Dirección General Creativa en BBDO Guatemala o la Dirección
-                  Creativa en Maruri Grey.
-                </p>
+          <div class="col-12 col-md-6">
+            <div class="service-item">
+              <div class="text">
+                <div class="text-left">
+                  <p>
+                    Actualmente soy Director General Creativo en Publicidad
+                    Comercial Mullen Lowe Guatemala, parte de GCC, el Grupo de
+                    comunicación más grande de Centroamérica y Caribe. Antes
+                    viví la experiencia de desarrollar mi propia agencia como
+                    socio fundador de MOSTRO Agency. Previamente ocupé cargos de
+                    Dirección en más de 5 agencias, entre los que se destacan la
+                    Dirección General Creativa en BBDO Guatemala o la Dirección
+                    Creativa en Maruri Grey.
+                  </p>
 
-                <p>
-                  He tenido la oportunidad de desarrollar estrategias y
-                  creatividad en 12 mercados de Latinoamérica para marcas como
-                  Toyota, Bayer, Doritos, Adidas, Jeep, Lays, DirecTV, Pepsi,
-                  Claro, Gatorade, Caterpillar, Tortrix, Pollo Campero, ONU,
-                  Shell y Ron Zacapa, obteniendo reconocimientos en festivales
-                  com Cannes Lions, D&AD, Clio, LIA, El Sol, Ojo de
-                  Iberoamérica, FIAP y Effie Latam entre otros.
-                </p>
+                  <p>
+                    He tenido la oportunidad de desarrollar estrategias y
+                    creatividad en 12 mercados de Latinoamérica para marcas como
+                    Toyota, Bayer, Doritos, Adidas, Jeep, Lays, DirecTV, Pepsi,
+                    Claro, Gatorade, Caterpillar, Tortrix, Pollo Campero, ONU,
+                    Shell y Ron Zacapa, obteniendo reconocimientos en festivales
+                    com Cannes Lions, D&AD, Clio, LIA, El Sol, Ojo de
+                    Iberoamérica, FIAP y Effie Latam entre otros.
+                  </p>
 
-                <p>
-                  He sido conferencista en universidades, TEDx y profesor de
-                  creatividad e innovación en Brother, la escuela de creatividad
-                  más grande del mundo.
-                </p>
+                  <p>
+                    He sido conferencista en universidades, TEDx y profesor de
+                    creatividad e innovación en Brother, la escuela de
+                    creatividad más grande del mundo.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -217,7 +219,6 @@ export default {
 .services .service-item {
   margin: 15px 0px;
   padding: 20px 0px;
-  text-align: center;
   transition: all 0.5s;
 }
 
@@ -228,7 +229,8 @@ export default {
   display: inline-block;
   line-height: 50px;
 }
-.service-item img {
+.service-item img,
+.portfolio-image img {
   width: 100%;
 }
 
@@ -333,6 +335,9 @@ export default {
 
 @media (min-width: 1025px) {
   .service-item img {
+    width: 80%;
+  }
+  .portfolio-image img {
     width: 80%;
   }
 }

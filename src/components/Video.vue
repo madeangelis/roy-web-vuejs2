@@ -1,6 +1,6 @@
 <template>
   <!-- Start video grid -->
-  <div>
+  <div class="row">
     <div
       id="video-list"
       v-for="video in videos"
@@ -10,7 +10,7 @@
       <div class="portfolio-item" :data-video="video.dataVideo">
         <div class="thumb">
           <div class="image">
-            <img :src="`../assets/img/${video.image}`" :alt="video.title" />
+            <img :src="displayImage(video)" :alt="video.title" />
             <div class="overlay">
               <img src="../assets/img/play_button.png" alt="" />
             </div>
@@ -25,6 +25,11 @@
 export default {
   name: "Video",
   props: ["videos"],
+  methods: {
+    displayImage(video) {
+      return require(`@/assets/img/${video.image}`);
+    },
+  },
 };
 </script>
 
@@ -61,6 +66,11 @@ export default {
   text-align: center;
 }
 
+.portfolio-item img {
+  width: 100%;
+  overflow: hidden;
+}
+
 .portfolio-item .thumb {
   position: relative;
 }
@@ -75,5 +85,51 @@ export default {
   width: 100%;
   bottom: 0;
   left: 0;
+}
+
+.full-screen-portfolio .portfolio-item h1 {
+  position: relative;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  padding-left: 20px;
+  line-height: 15px;
+  transform: translateY(25px);
+  transition: 0.5s ease-in-out;
+  letter-spacing: 0.5px;
+}
+
+.full-screen-portfolio .portfolio-item em {
+  font-style: normal;
+  font-weight: 200;
+}
+
+.full-screen-portfolio .portfolio-item:hover h1 {
+  transform: translateY(0);
+}
+
+.full-screen-portfolio .portfolio-item p {
+  padding-left: 20px;
+  font-weight: 300 !important;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.5s ease-in-out;
+  text-transform: uppercase;
+}
+
+.full-screen-portfolio .portfolio-item {
+  text-align: center;
+  line-height: 150%;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+.full-screen-portfolio .portfolio-item:hover p {
+  opacity: 1;
+  transform: translateY(0);
 }
 </style>

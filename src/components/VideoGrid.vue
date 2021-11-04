@@ -1,7 +1,7 @@
 <template>
   <div class="full-screen-portfolio" id="portfolio">
     <div class="container-fluid">
-      <Video v-bind:videos="videos" />
+        <Video v-bind:videos="videos" />
     </div>
   </div>
 </template>
@@ -33,6 +33,42 @@ export default {
           title: "IRTRA",
           image: "irtra.jpg",
           dataVideo: "MD118-syTQM",
+        },
+        {
+          id: 4,
+          title: "Toyota",
+          image: "toyota.jpg",
+          dataVideo: "c8SedrGtWtk",
+        },
+        {
+          id: 5,
+          title: "Burger King",
+          image: "burger_king.jpg",
+          dataVideo: "zix3XgDvb6U",
+        },
+        {
+          id: 6,
+          title: "Super 24 Buzos/Astronauta",
+          image: "buzos.png",
+          dataVideo: "6RImAVN0_1g",
+        },
+        {
+          id: 7,
+          title: "Bonie",
+          image: "bonie.jpg",
+          dataVideo: "rBilOt9iRdQ",
+        },
+        {
+          id: 8,
+          title: "Bomberos Voluntarios",
+          image: "bomberos.jpg",
+          dataVideo: "sESeBymKXgw",
+        },
+        {
+          id: 9,
+          title: "Shinny Lessons",
+          image: "shinny_lessons.jpg",
+          dataVideo: "xLD9lVytOJ0",
         },
       ],
     };

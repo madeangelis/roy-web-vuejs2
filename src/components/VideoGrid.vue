@@ -1,7 +1,7 @@
 <template>
   <div class="full-screen-portfolio" id="portfolio">
     <div class="container-fluid">
-        <Video v-bind:videos="videos" />
+      <Video v-bind:videos="videos" />
     </div>
   </div>
 </template>
@@ -78,7 +78,7 @@ export default {
 
 <style>
 #portfolio {
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 
 .full-screen-portfolio .container-fluid,

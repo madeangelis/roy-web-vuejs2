@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Video from "../components/Video.vue";
+import Video from "./VideoContainer.vue";
 export default {
   name: "VideoGrid",
   components: {

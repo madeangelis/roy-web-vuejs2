@@ -10,7 +10,7 @@
         <span></span>
       </div>
     </nav>
-    <Menu @toggle-menu="$emit('toggle-menu', isOpen)" :isOpen="isOpen" />
+    <Menu :isOpen="isOpen" />
   </div>
 </template>
 

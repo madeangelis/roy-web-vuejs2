@@ -5,14 +5,12 @@
         <div class="main-menu">
           <ul>
             <li>
-              <router-link to="about" @click="$emit('toggle-menu', isOpen)"
+              <router-link to="about" @click="toggleMenu()"
                 >Biografía</router-link
               >
             </li>
             <li>
-              <router-link to="retro" @click="$emit('toggle-menu', isOpen)"
-                >Retro</router-link
-              >
+              <router-link to="retro" @click="toggleMenu()">Retro</router-link>
             </li>
             <li>
               <!-- Modal button -->
@@ -52,6 +50,9 @@ export default {
     };
   },
   methods: {
+    toggleMenu() {
+      this.isOpen = !this.isOpen;
+    },
     toggleContact() {
       this.contactOpen = !this.contactOpen;
     },
